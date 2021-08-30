@@ -1,13 +1,16 @@
 package ch1;
 
+import ch1.springbook.user.dao.ConnectionMaker;
+import ch1.springbook.user.dao.DConnectionMaker;
 import ch1.springbook.user.dao.UserDao;
 import ch1.springbook.user.domain.User;
 
 import java.sql.SQLException;
 
-public class Main {
+public class UserDaoTest {
     public static void main(String args[]) throws ClassNotFoundException, SQLException {
-        UserDao dao = new UserDao();
+        ConnectionMaker connectionMaker = new DConnectionMaker();
+        UserDao dao = new UserDao(connectionMaker);
 
         User user = new User();
         user.setId("whiteship");
