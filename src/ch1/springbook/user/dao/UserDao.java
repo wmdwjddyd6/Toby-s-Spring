@@ -8,7 +8,7 @@ public class UserDao {
 
     private ConnectionMaker connectionMaker;    // 인스턴스 변수 (읽기 전용)
 
-    public UserDao(ConnectionMaker connectionMaker) {
+    public void setConnectionMaker(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
     }
 
