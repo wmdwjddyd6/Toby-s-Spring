@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class UserDao {
 
-    private ConnectionMaker connectionMaker;
+    private ConnectionMaker connectionMaker;    // 인스턴스 변수 (읽기 전용)
 
     public UserDao(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
