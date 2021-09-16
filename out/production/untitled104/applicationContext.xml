@@ -11,7 +11,7 @@
         <property name="password" value="43319521"/>
     </bean>
 
-    <bean id="userDao" class="ch1.springbook.user.dao.UserDao">
+    <bean id="userDao" class="ch2.springbook.user.dao.UserDao">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 </beans>
